@@ -5,7 +5,7 @@ import os
 from datetime import datetime, timezone
 
 DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
-HENRIK_API_KEY = os.environ["HENRIK_API_KEY"]
+HENRIK_API_KEY = os.environ["HENRIK_API_KEY"].strip()
 CHANNEL_ID = 1310677185169850452
 CHECK_INTERVAL = 60
 DELETE_AFTER = 180  # secondes avant suppression du message
